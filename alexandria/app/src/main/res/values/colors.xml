@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#2196F3</color>
+    <color name="primaryDark">#1976D2</color>
+    <!-- opposite color from adobe wheel #F3A021 -->
+    <color name="accent">#2196F3</color>
+
+    <color name="separator">#d9d9d9</color>
+    <color name="blackTextColor">#212121</color>
+    <color name="greyTextColor">#616161</color>
+</resources>

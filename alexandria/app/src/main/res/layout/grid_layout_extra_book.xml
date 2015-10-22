@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:alignmentMode="alignBounds"
+    app:columnOrderPreserved="false"
+    app:columnCount="2">
+
+    <TextView
+        android:id="@+id/categoriesTitle"
+        android:text="@string/gridGenre"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/blackTextColor"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill_horizontal"
+        tools:text="Genres" />
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:text="@string/gridPages"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/blackTextColor"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill_horizontal"
+        tools:text="Pages" />
+
+    <TextView
+        android:id="@+id/categories"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/greyTextColor"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill_horizontal"
+        tools:text="Fiction" />
+
+    <TextView
+        android:id="@+id/pageCount"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/greyTextColor"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill_horizontal"
+        tools:text="510" />
+
+    <android.support.v7.widget.Space
+        android:layout_height="16dp"
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1" />
+
+    <TextView
+        android:id="@+id/isbnTitle"
+        android:text="@string/gridISBN"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/blackTextColor"
+        app:layout_columnWeight="1"
+        tools:text="ISBN" />
+
+    <TextView
+        android:id="@+id/publisherTitle"
+        android:text="@string/gridPublisher"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/blackTextColor"
+        app:layout_columnWeight="1"
+        tools:text="Publisher" />
+
+    <TextView
+        android:id="@+id/isbn"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/greyTextColor"
+        app:layout_columnWeight="1"
+        tools:text="9782709650205" />
+
+    <TextView
+        android:id="@+id/publisher"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/greyTextColor"
+        app:layout_columnWeight="1"
+        tools:text="JC Lattès" />
+
+</android.support.v7.widget.GridLayout>

@@ -1,0 +1,132 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    tools:context="it.jaschke.alexandria.BookDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/fullBookCover"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/book_cover"
+            android:scaleType="fitStart" />
+
+        <TextView
+            android:id="@+id/fullBookTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/fullBookCover"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/fullBookCover"
+            android:layout_toLeftOf="@+id/delete_button"
+            android:layout_toRightOf="@+id/fullBookCover"
+            android:layout_toStartOf="@+id/delete_button"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/blackTextColor"
+            android:textSize="20sp"
+            tools:text="Grey - Cinquante nuances de Grey par Christian" />
+
+        <ImageButton
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/fullBookTitle"
+            android:background="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/ic_delete_24dp" />
+
+        <TextView
+            android:id="@+id/fullBookSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fullBookTitle"
+            android:layout_alignStart="@+id/fullBookTitle"
+            android:layout_below="@+id/fullBookTitle"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="5"
+            android:textSize="18sp"
+            tools:text="Subtitle ......................" />
+
+        <TextView
+            android:id="@+id/authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fullBookTitle"
+            android:layout_alignStart="@+id/fullBookTitle"
+            android:layout_below="@+id/fullBookSubTitle"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/blackTextColor"
+            tools:text="Authors........................." />
+
+        <TextView
+            android:id="@+id/publishedOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fullBookTitle"
+            android:layout_alignStart="@+id/fullBookTitle"
+            android:layout_below="@+id/authors"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/greyTextColor"
+            android:textSize="12sp"
+            tools:text="Authors........................." />
+
+        <View
+            android:id="@+id/separtorHeader"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/fullBookCover"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/separator" />
+
+        <TextView
+            android:id="@+id/fullBookDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separtorHeader"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:lineSpacingExtra="5sp"
+            android:textColor="@color/blackTextColor"
+            android:textSize="16sp"
+            tools:text="Redécouvrez Cinquante Nuances de Grey à travers les yeux de Christian. CHRISTIAN GREY contrôle tous les aspects de sa vie : son monde est ordonné, organisé et désespérément vide, jusqu’au jour où Anastasia Steele tombe la tête la première dans son bureau. Il tente de l’oublier, mais il est emporté dans un tourbillon d’émotions qui le dépassent. À l’inverse des autres femmes, Ana l’ingénue semble lire en lui à livre ouvert, et deviner un cœur d’homme blessé derrière l’apparence glacée du magnat des affaires. Ana pourra-t-elle effacer les horreurs que Christian a connues dans son enfance et qui ne cessent de le tourmenter ? Ou est-ce que la face sombre de la sexualité de Christian, son goût exacerbé du pouvoir et le peu d’estime de soi qui le consume auront raison des sentiments de la jeune femme ?" />
+
+
+        <View
+            android:id="@+id/separtorDesc"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/fullBookDesc"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/separator" />
+
+        <include
+            layout="@layout/grid_layout_extra_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separtorDesc"/>
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
