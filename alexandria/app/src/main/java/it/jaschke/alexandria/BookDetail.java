@@ -27,7 +27,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import it.jaschke.alexandria.data.AlexandriaContract;
-import it.jaschke.alexandria.data.BookDetailModel;
+import it.jaschke.alexandria.data.model.BookDetailModel;
 import it.jaschke.alexandria.services.BookService;
 
 

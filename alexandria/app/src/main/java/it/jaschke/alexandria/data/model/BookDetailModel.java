@@ -1,4 +1,4 @@
-package it.jaschke.alexandria.data;
+package it.jaschke.alexandria.data.model;
 
 
 import android.os.Parcel;
@@ -18,6 +18,19 @@ public class BookDetailModel implements Parcelable {
 
     public BookDetailModel() {
 
+    }
+
+    public BookDetailModel(Book book, Author author, Category category) {
+        mIsbn = book.getEan();
+        mTitleBook = book.getTitle();
+        mSubTitle = book.getSubtitle();
+        mDesc = book.getDescription();
+        mAuthors = author.getAuthor();
+        mImgUrl = book.getImageUrl();
+        mPublisher = book.getPublisher();
+        mPublishedOn = book.getPublishedDate();
+        mPages = book.getPageCount();
+        mCategories = category.getCategory();
     }
 
     protected BookDetailModel(Parcel in) {

@@ -35,6 +35,8 @@
             android:fontFamily="sans-serif"
             android:textColor="@color/blackTextColor"
             android:textSize="20sp"
+            android:maxLines="2"
+            android:ellipsize="end"
             tools:text="Grey - Cinquante nuances de Grey par Christian" />
 
         <ImageButton
